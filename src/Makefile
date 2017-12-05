@@ -1,7 +1,7 @@
 .SUFFIXES: .erl .beam .yrl
 
 MODS := $(wildcard *.erl)
-ERLC      = @echo "  ERLC\t$<"; /usr/local/bin/erlc
+ERLC      = @echo "  ERLC\t$<"; `type -p erlc`
 PDFLATEX  = @echo "  PDFLATEX\t$<"; /usr/texbin/pdflatex
 
 %.beam: %.erl
